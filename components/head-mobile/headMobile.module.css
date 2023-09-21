@@ -1,0 +1,17 @@
+.mobileContent {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobileContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    height: 7vh;
+    width: 100%;
+    gap: 20px;
+    background-color: var(--background-foot-head);
+    font-size: small;
+  }
+}

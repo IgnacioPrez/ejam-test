@@ -1,0 +1,19 @@
+@media (max-width:768px){
+    .score{
+        display: flex;
+        gap: 5px;
+    }
+    .score svg{
+        width: .7rem;
+    }
+}
+
+@media (min-width:700px) and (max-width:768px){
+    .score{
+        display: flex;
+        gap: 9px;
+    }
+    .score svg{
+        width: 1rem;
+    }
+}

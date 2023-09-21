@@ -1,0 +1,80 @@
+.instructionContent {
+  width: 100vw;
+  height: 10vh;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+.listInstruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.instructionContent li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.instructionContent svg {
+  font-size: 1.7rem;
+}
+.instructionContent :nth-child(3) svg {
+  font-size: 1rem;
+  background-color: var(--color-advertisements);
+  color: #fff;
+  padding: 5px 8px;
+  clip-path: circle(50% at 50% 50%);
+}
+.instructionContent :nth-child(4) svg {
+  font-size: 0.9rem;
+  background-color: var(--color-advertisements);
+  color: #fff;
+  padding: 6px 8px;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.listInstructionTwo {
+  display: none;
+}
+@media (max-width: 768px) {
+  .listInstruction {
+    display: none;
+  }
+
+  .listInstructionTwo {
+    display: block;
+  }
+  .instructionContent {
+    height: 15vh;
+    margin-top: 0.2em;
+  }
+  .listInstructionTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .instructionContent li {
+    flex-direction: column;
+    gap: 2px;
+    font-size: small;
+    font-weight: 300;
+  }
+  .instructionContent svg {
+    font-size: 1.1rem;
+  }
+
+  .instructionContent :nth-child(3) svg {
+    font-size: 0.6rem;
+    padding: 5px 6px;
+  }
+  .instructionContent :nth-child(3) {
+    font-weight: bold;
+  }
+  .instructionContent :nth-child(4) svg {
+    font-size: 0.6rem;
+    padding: 5px 6px;
+  }
+}

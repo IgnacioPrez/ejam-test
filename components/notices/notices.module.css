@@ -1,0 +1,150 @@
+.contentNotices {
+  display: flex;
+  width: 100vw;
+  height: 25vh;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.userContent {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+  padding: 5px;
+}
+.textUser {
+  font-size: small;
+  color: var(--subtitle-paragraph);
+}
+.user {
+  display: flex;
+  height: auto;
+  align-items: center;
+  gap: 15px;
+}
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--verified);
+}
+
+.userInfo p:nth-child(1) {
+  color: #333333;
+  font-weight: bold;
+}
+
+.warningInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.guarantee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.guarantee img {
+  width: 40%;
+  object-fit: contain;
+
+}
+.guarantee span {
+  font-weight: bold;
+}
+.guarantee {
+  color: var(--subtitle-paragraph);
+}
+.notice {
+  color: var(--red);
+  text-decoration: underline;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .contentNotices {
+    height: 30vh;
+    max-width: 95%;
+  }
+  .userContent {
+    display: none;
+  }
+
+  .warningInfo {
+    gap: 20px;
+  }
+  .guarantee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .guarantee img {
+    width: 60px;
+    object-fit: contain;
+  }
+  .guarantee span {
+    font-weight: bold;
+  }
+  .guarantee {
+    color: var(--subtitle-paragraph);
+    font-size: 0.8rem;
+
+  }
+  .notice {
+    color: var(--red);
+    text-decoration: underline;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (min-width:768px)  and (max-width: 968px) {
+    .contentNotices {
+        height: 30vh;
+        max-width: 95%;
+      }
+      .userContent {
+        display: none;
+      }
+    
+      .warningInfo {
+        gap: 20px;
+      }
+      .guarantee {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        max-width: 90%;
+      }
+      .guarantee img {
+        width: 100px;
+        object-fit: contain;
+      }
+      .guarantee span {
+        font-weight: bold;
+      }
+      .guarantee {
+        color: var(--subtitle-paragraph);
+        font-size:1rem;
+      }
+      .notice {
+        color: var(--red);
+        text-decoration: underline;
+        font-size: 1.2rem;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+      }
+}

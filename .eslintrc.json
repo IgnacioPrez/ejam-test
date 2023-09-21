@@ -1,3 +1,21 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "semi": ["error", "always"],
+  "indent": ["error", 2],
+  "quotes": ["error", "single"],
+  "space-before-function-paren": ["error", "always"],
+  "space-in-parens": ["error", "never"],
+  "camelcase": ["error", { "properties": "always" }],
+  "no-unused-vars": "error",
+  "eqeqeq": "error",
+  "no-var": "error",
+  "no-console": "warn",
+  "no-unused-expressions": "error",
+  "no-trailing-spaces": "error",
+  "eol-last": "error",
+  "arrow-spacing": ["error", { "before": true, "after": true }],
+  "no-useless-constructor": "error",
+  "no-const-assign": "error",
+  "prefer-const": "error",
+  "import/export": "error"
 }
